@@ -1,0 +1,129 @@
+/* MENU */
+/* =-=-=-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=-  */
+
+/* Menu */
+.menu-itens-container{
+    padding-top: 98px;
+}
+.menu-style:not(ul),
+.menu-style li{
+    background-color: #797979;
+    color: #EFEFEF;
+    width: 100%;
+    font-size: 11px;
+    padding: 10px 5px 10px 5px;
+    border-right: 1px solid #4A4A4A;
+    border-top: 1px solid #858585;
+    border-bottom: 1px solid #4A4A4A;
+    list-style: none;
+    cursor: pointer;
+}
+.menu-style li{
+    padding: 0;
+}
+.menu-style li > a,
+.menu-style li > a:hover{
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+    padding: 10px 5px 10px 5px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.menu-style li:nth-child(even){
+    background-color: #6C6C6C;
+}
+.menu-style li:hover{
+    transition: background-color 0.1s ease;
+    background-color: #464646;
+    border-top: 1px solid #464646;
+}
+.menu-style li:hover .new-item{
+    transition: opacity 0.1s ease;
+    opacity: 0;
+}
+.menu-style li .new-item{
+    background-color: #BCC344;
+    padding: 2px 10px 2px 10px;
+    float: right;
+    margin-top: 5px;
+    color: #474747;
+    border: 1px solid #5f5f5f;
+}
+.menu-style.menu-style-tool{
+    background-color: #616161;
+    text-align: center;
+    position: fixed;
+    top: 45px;
+    z-index: 999;
+}
+.menu-style.menu-style-tool,
+.menu-style li.current{
+    width: 240px;
+}
+
+.menu-style.menu-style-tool:first-child{
+    border-bottom: none;
+    margin-top: -1px;
+}
+.menu-style.menu-style-tool:nth-child(2){
+    border-top: none;
+    margin-top: 45px;
+}
+ul.menu-style{
+    padding: 0;
+    margin: 0;
+}
+.menu-style .icon{
+    display: inline-block;
+    background-color: #464646;
+    padding: 8px;
+    border-radius: 15px;
+    margin-right: 6px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+}
+.menu-style.menu-style-tool .input-group .input-group-addon,
+.menu-style.menu-style-tool .input-group .form-control{
+    border: 1px solid #FFF;
+    border-radius: 0;
+}
+.menu-style.menu-style-tool .input-group .form-control{
+    font-size: 11px;
+}
+
+.menu-style .menu-sub-panel{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-color: #9E9E9E;
+    border-top: 1px solid #5a5a5a;
+}
+.menu-style .menu-sub-panel li{
+    background-color: #292929;
+    border: none;
+}
+.menu-style .menu-sub-panel li:hover{
+    background-color: #565656;
+    transition: background-color 0.3s linear;
+}
+
+.menu-style li.current{
+    position: fixed;
+    z-index: 99999;
+    max-height: 100%;
+}
+.menu-style-modal{
+    position: absolute;
+    width: 94.2%;
+    height: 100%;
+    background-color: rgb(89, 89, 89);
+    top: 0px;
+    left: 0px;
+    opacity: 0.8;
+}
+
+/* MENU */
+/* =-=-=-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=- =-=-  */

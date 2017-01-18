@@ -1,0 +1,35 @@
+@media (min-width: 1px) and (max-width: 767px) {
+    .col-xs-text-center{
+        text-align: center;
+    }
+
+
+    .main-container,
+    .main-sidebar{
+        width: 100%;
+    }
+    .theme-01 .main-header > div:first-child{
+        background-color: #E7E7E7;
+    }
+    .theme-01 .main-header .header-options,
+    .theme-01 .main-header > div:first-child{
+        border-bottom: 1px solid #c0c0c0;
+    }
+
+    .theme-01 .main-header{
+        border-bottom: none;
+    }
+
+    .logomark-header h1{
+        width: 20%;
+        margin-top: -5px;
+    }
+    .logomark-header {
+        height: 35px;
+        position: static;
+    }
+
+    .main-box .main-box-header .main-box-header-buttons{
+        border-top: 1px solid gainsboro;
+    }
+}

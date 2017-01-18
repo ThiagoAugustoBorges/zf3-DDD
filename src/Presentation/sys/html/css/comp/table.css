@@ -1,0 +1,129 @@
+.table-scrollable {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid #ddd;
+}
+.table-scrollable > .table {
+    width: 100% !important;
+    margin: 0 !important;
+}
+.caption-feature{
+    background-color: rgb(155, 155, 155);
+    text-align: center;
+    border: 1px solid rgb(125, 125, 125);
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans', cursive;
+}
+
+.table-bordered .caption-feature{
+    border: 1px solid rgb(121, 121, 121);
+}
+.table{
+    font-size: 12px;
+}
+.table .middle{
+    vertical-align: middle;
+}
+.table .small-text{
+    font-size: 12px;
+}
+.table .big-text{
+    font-size: 35px;
+}
+.table .buttons-container{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    vertical-align: middle;
+}
+.no-padding .table{
+    margin-bottom: 0;
+}
+
+.table-header-color > thead > tr > th:not(:empty),
+.table-header-color > tbody > tr > th:not(:empty),
+.table-header-color > tfoot > tr > th:not(:empty){
+    border: 1px solid rgb(125, 125, 125);
+    background-color: rgb(83, 83, 83);
+    color: #FFF;
+}
+.table > thead > tr > th,
+.table > thead > tr > td{
+    font-family: 'Noto Sans', cursive;
+}
+
+
+.table > thead > tr:last-child > th,
+.table > tbody > tr:last-child > th,
+.table > tfoot > tr:last-child > th,
+.table > thead > tr:last-child > td,
+.table > tbody > tr:last-child > td,
+.table > tfoot > tr:last-child > td {
+    border-bottom: 1px solid;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td{
+    border: 1px solid;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td{
+    border-top: 1px solid;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td,
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td,
+.table > thead > tr:last-child > th,
+.table > tbody > tr:last-child > th,
+.table > tfoot > tr:last-child > th,
+.table > thead > tr:last-child > td,
+.table > tbody > tr:last-child > td,
+.table > tfoot > tr:last-child > td{
+    border-color: rgb(209, 209, 209);
+}
+
+
+.table-last-center > thead > tr > th:last-child,
+.table-last-center > tbody > tr > th:last-child,
+.table-last-center > tfoot > tr > th:last-child,
+.table-last-center > thead > tr > td:last-child,
+.table-last-center > tbody > tr > td:last-child,
+.table-last-center > tfoot > tr > td:last-child,
+.table-first-center > thead > tr > th:first-child,
+.table-first-center > tbody > tr > th:first-child,
+.table-first-center > tfoot > tr > th:first-child,
+.table-first-center > thead > tr > td:first-child,
+.table-first-center > tbody > tr > td:first-child,
+.table-first-center > tfoot > tr > td:first-child,
+.table-header-center > thead > tr > th,
+.table-header-center > tbody > tr > th,
+.table-header-center > tfoot > tr > th,
+.table-center > td,
+.table-center > th{
+    text-align: center;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1){
+    background-color: rgb(248, 248, 248);
+}
+.table-hover > tbody > tr:hover{
+    background-color: rgb(228, 228, 228);
+    transition: all 0.1s ease;
+    cursor: default;
+}

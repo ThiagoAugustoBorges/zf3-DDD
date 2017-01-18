@@ -1,0 +1,131 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.m-t-5{
+    margin-top: 5px;
+}
+label, .label{
+    font-weight: 600;
+}
+.box-row{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+.main-container{
+    width: calc(100% - 240px);
+    float: left;
+}
+main .main-container{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.main-sidebar{
+    width: 240px;
+    float: left;
+}
+
+.wrapper{
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  float: left;
+}
+.wrapper main{
+    float: left;
+    height: 100%;
+    background-color: #dbdbdb;
+    width: 100%;
+}
+
+.main-header{
+  position: relative;
+  max-height: 100px;
+}
+.main-footer{
+  height: 170px;
+  width: 100%;
+  background:#999;
+  float: left;
+}
+.logomark-header{
+    position: fixed;
+    width: 240px;
+    z-index: 9999;
+    height: 45px;
+}
+.main-header,
+.logomark-header h1{
+  height: 45px;
+  width: 100%;
+}
+.main-header > div:first-child{
+    background-color: #EFEFEF;
+    border-right: 1px solid #616161;
+    border-bottom: 1px solid #616161;
+}
+.logomark-header h1{
+  max-width: 100%;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  float: left;
+  background: transparent url("/img/logos/logo-x-small.png") no-repeat scroll center center / 70% auto;
+}
+.logomark-header .responsive-box{
+  display: inline-block;
+  height: 100%;
+  font-size: 23px;
+  background-color: #FFFFFF;
+  width: 50px;
+  text-align: center;
+  float: right;
+  margin-right: -16px;
+  color: #333;
+  border-left: 1px solid #D8D8D8;
+  padding-top: 2px;
+}
+.header-options{
+    width: 100%;
+}
+.header-options,
+.header-options *{
+  height: 100%;
+}
+.header-options ul{
+  padding: 0;
+  margin: 0;
+}
+.header-options ul li{
+  list-style: none;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+  border-left: 1px solid #D8D8D8;
+  padding-top: 9px;
+  cursor: pointer;
+}
+.header-options ul li:not(.menu-user){
+    width: 55px;
+    text-align: center;
+}
+.header-options ul li:hover{
+  background-color: #A4A4AE;
+  color: #FFF;
+}
+.header-options ul li:active{
+  background-color: #A7A3A3;
+}
+.header-options ul li.menu-user{
+  font-size: 12px;
+  padding-top: 10px;
+}
+.header-options ul li.menu-user img{
+  width: 25px;
+  height: 25px;
+  border-radius: 11px;
+  margin-right: 5px;
+}

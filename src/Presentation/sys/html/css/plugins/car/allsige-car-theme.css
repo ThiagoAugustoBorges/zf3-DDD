@@ -1,0 +1,100 @@
+.theme-01 .car-slide-one {
+    background: #8D8D8D;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+.theme-01 .car-slide-one label {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    border: 2px solid #8A8A8A;
+    background: #F6F6F6 none repeat scroll 0% 0%;
+}
+.theme-01 .car-slide-one input[type=checkbox]:checked + label,
+.theme-01 .car-slide-one input[type=radio]:checked + label{
+    background: #60FF00 none repeat scroll 0% 0%;
+}
+
+
+
+
+.theme-01 .car-slide-two {
+    background: #8D8D8D;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.theme-01 .car-slide-two:after {
+    background: #808080 none repeat scroll 0% 0%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5) inset, 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.theme-01 .car-slide-two label {
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    background: #fcfff4;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+}
+
+.theme-01 .car-slide-two label:after {
+    background: #8D8D8D none repeat scroll 0% 0%;
+    box-shadow: 0px 1px 1px #000 inset, 0px 1px 0px rgba(255, 255, 255, 0.9);
+    border: 1px solid #8D8D8D;
+}
+.theme-01 .car-slide-two input[type=checkbox]:checked + label:after,
+.theme-01 .car-slide-two input[type=radio]:checked + label:after{
+    background: #60FF00 none repeat scroll 0% 0%;
+}
+
+
+
+
+.theme-01 .car-slide-three {
+    background: rgb(102, 102, 102) none repeat scroll 0 0;
+    box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.6) inset, 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.theme-01 .car-slide-three:after {
+    color: #C6C6C6;
+}
+
+.theme-01 .car-slide-three:before {
+    color: #00F500;
+}
+
+.theme-01 .car-slide-three label {
+    box-shadow: 0px 0px 0px 4px #FFF;
+    background: #FCFFF4 none repeat scroll 0% 0%;
+    border: 2px solid rgb(102, 102, 102);
+}
+
+
+
+
+.theme-01 .car-rounded-one,
+.theme-01 .car-rounded-two,
+.theme-01 .car-squared-one,
+.theme-01 .car-squared-two{
+    box-shadow: 0px 1px 1px #FFF inset, 0px 1px 3px rgba(0, 0, 0, 0.5);
+    background-color: #FFF;
+}
+
+.theme-01 .car-rounded-one label,
+.theme-01 .car-rounded-two label,
+.theme-01 .car-squared-one label,
+.theme-01 .car-squared-two label{
+    box-shadow: 0px 1px 1px #000 inset, 0px 1px 0px #D2C5C5;
+    background-color: #808080;
+}
+
+.theme-01 .car-rounded-one label:after,
+.theme-01 .car-rounded-two label:after,
+.theme-01 .car-squared-one label:after,
+.theme-01 .car-squared-two label:after{
+    color: #00BF00;
+    text-shadow: 1px 1px 0px #2D2D2D;
+    background: #00bf00;
+    background: linear-gradient(top, #00bf00 0%, #009400 100%);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+
+.theme-01 .car-squared-three label {
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    background: linear-gradient(to bottom, rgb(181, 189, 200) 0%,rgb(120, 120, 120) 36%,rgb(134, 134, 134) 100%);
+}
+

@@ -1,0 +1,4 @@
+1) Para uma configuração correta é sempre recomendável que o XAMPP seja instalado na raiz do sistema (C:)
+2) Após a instalação do Xampp clique em Start no serviço do Apache e verifique se o mesmo consegue rodar na porta padrão 80.
+	2.1) Em caso de falha na execução na porta 80 abra o arquivo de configuração de HTTP do Apache (httpd.conf) e subistitua "Listen 80" para "Listen XXXX" e "ServerName localhost:80" para "ServerName localhost:XXXX". Após esse procedimento clique em Start novamente para que o serviço inicie.
+3) Para verificar que o ambiente foi configurado com sucesso abra o browser e digite no campo da URL "http://localhost:8080/dashboard/"	

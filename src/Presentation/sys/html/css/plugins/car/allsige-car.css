@@ -1,0 +1,370 @@
+input[type=checkbox]:not(.old),input[type=radio]:not(.old) {
+    visibility: hidden;
+}
+.car-slide-one {
+    width: 50px;
+    height: 10px;
+    border-radius: 50px;
+    position: relative;
+}
+.car-slide-one.inline{
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.car-slide-one label {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    transition: all .4s ease;
+    cursor: pointer;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+}
+.car-slide-one input[type=checkbox]:checked + label,
+.car-slide-one input[type=radio]:checked + label{
+    left: 37px;
+}
+
+
+.car-slide-two {
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 1px;
+}
+.car-slide-two.inline{
+    float: left;
+}
+.car-slide-two.inline ~ label{
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.car-slide-two:after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    height: 2px;
+    width: 52px;
+    border-radius: 50px;
+}
+.car-slide-two label {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    transition: all .4s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    z-index: 1;
+    left: 4px;
+}
+.car-slide-two label:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    left: 6px;
+    top: 6px;
+}
+.car-slide-two input[type=checkbox]:checked + label,
+.car-slide-two input[type=radio]:checked + label{
+    left: 54px;
+}
+
+
+.car-slide-three {
+    width: 80px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+}
+.car-slide-three.inline{
+    float: left;
+}
+.car-slide-three.inline ~ label{
+    margin-top: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.car-slide-three:after {
+    content: attr(data-text-unchecked);
+    font: 12px/26px Arial, sans-serif;
+    position: absolute;
+    right: 10px;
+    z-index: 0;
+    font-weight: bold;
+}
+.car-slide-three:before {
+    content: attr(data-text-checked);
+    font: 12px/26px Arial, sans-serif;
+    position: absolute;
+    left: 10px;
+    z-index: 0;
+    font-weight: bold;
+}
+.car-slide-three label {
+    display: block;
+    width: 34px;
+    height: 20px;
+    border-radius: 50px;
+    transition: all .4s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+}
+.car-slide-three input[type=checkbox]:checked + label,
+.car-slide-three input[type=radio]:checked + label{
+    left: 43px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.car-rounded-one,
+.car-rounded-two{
+    width: 26px;
+    height: 25px;
+    border-radius: 50px;
+    position: relative;
+    float: left;
+}
+.car-rounded-one ~ label,
+.car-rounded-two ~ label{
+    margin-top: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.car-rounded-one.car-rounded-big ~ label,
+.car-rounded-two.car-rounded-big ~ label{
+    margin-top: 5px;
+}
+.car-rounded-one.car-rounded-big,
+.car-rounded-two.car-rounded-big{
+    width: 30px;
+    height: 29px;
+}
+.car-rounded-one label,
+.car-rounded-two label{
+    cursor: pointer;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: 5px;
+    top: 4.45px;
+}
+.car-rounded-one.car-rounded-big label,
+.car-rounded-two.car-rounded-big label{
+    width: 20px;
+    height: 20px;
+}
+.car-rounded-one label:after,
+.car-rounded-two label:after{
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    top: 2px;
+    left: 2px;
+}
+.car-rounded-one.car-rounded-big label:after,
+.car-rounded-two.car-rounded-big label:after{
+    width: 16px;
+    height: 16px;
+}
+.car-rounded-two label:after{
+    background: transparent none repeat scroll 0% 0% !important;
+    box-shadow: none !important;
+    content: "¬" !important;
+    border-top: medium none;
+    border-right: medium none;
+    transform: rotate(135deg);
+    font-size: 35px;
+    top: 10px;
+    left: 23px;
+}
+.car-rounded-two.car-rounded-big label:after{
+    font-size: 41px;
+    top: 12px;
+    left: 27px;
+}
+
+.car-rounded-one label:hover::after,
+.car-rounded-two label:hover::after,
+.car-squared-one label:hover::after,
+.car-squared-two label:hover::after,
+.car-squared-three label:hover::after{
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+
+.car-rounded-one input[type=checkbox]:checked + label:after,
+.car-rounded-one input[type=radio]:checked + label:after,
+.car-rounded-two input[type=checkbox]:checked + label:after,
+.car-rounded-two input[type=radio]:checked + label:after,
+.car-squared-one input[type=checkbox]:checked + label:after,
+.car-squared-one input[type=radio]:checked + label:after,
+.car-squared-two input[type=checkbox]:checked + label:after,
+.car-squared-two input[type=radio]:checked + label:after,
+.car-squared-three input[type=checkbox]:checked + label:after,
+.car-squared-three input[type=radio]:checked + label:after{
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+
+
+.car-squared-one,
+.car-squared-two{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    float: left;
+}
+.car-squared-one ~ label,
+.car-squared-two ~ label{
+    margin-top: 3px;
+    margin-left: 6px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.car-squared-one.car-squared-big ~ label,
+.car-squared-two.car-squared-big ~ label{
+    margin-top: 5px;
+}
+.car-squared-one.car-squared-big,
+.car-squared-two.car-squared-big{
+    width: 28px;
+    height: 28px;
+}
+
+.car-squared-one label,
+.car-squared-two label{
+    cursor: pointer;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 4px;
+    top: 4px;
+}
+
+.car-squared-one.car-squared-big label,
+.car-squared-two.car-squared-big label {
+    width: 20px;
+    height: 20px;
+}
+
+.car-squared-one label:after,
+.car-squared-two label:after{
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    left: 2px;
+}
+.car-squared-one.car-squared-big label:after,
+.car-squared-two.car-squared-big label:after{
+    width: 16px;
+    height: 16px;
+}
+.car-squared-two label:after{
+    background: transparent none repeat scroll 0% 0% !important;
+    box-shadow: none !important;
+    content: "¬" !important;
+    border-top: medium none;
+    border-right: medium none;
+    transform: rotate(135deg);
+    font-size: 33px;
+    top: 8px;
+    left: 23px;
+}
+.car-squared-two.car-squared-big label:after{
+    font-size: 41px;
+    top: 12px;
+    left: 27px;
+}
+
+.car-squared-three {
+    width: 20px;
+    position: relative;
+    float: left;
+}
+.car-squared-three ~ label {
+    margin-top: 0px;
+    margin-left: 5px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.car-squared-three label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border-radius: 1px;
+}
+
+.car-squared-three label:after {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    background: transparent;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+
+

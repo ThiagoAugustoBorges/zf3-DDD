@@ -1,0 +1,22 @@
+<?= $this->doctype() ?>
+
+<html lang="pt-br">
+<head>
+    <?=$this->render('layout/head'); ?>
+    <title>allSIGE Temp. Início</title>
+</head>
+    <body class="theme-01">
+    <div class="wrapper">
+        <?=$this->render('layout/header'); ?>
+        <main>
+            <?=$this->render('layout/menu'); ?>
+            <div class="main-container container-fluid">
+                <div class="box-row">
+                    <?=$this->content?>
+                </div>
+            </div>
+        </main>
+        <?=$this->render('layout/footer'); ?>
+    </div>
+    </body>
+</html>
