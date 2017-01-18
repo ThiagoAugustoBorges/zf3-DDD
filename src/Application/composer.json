@@ -1,0 +1,49 @@
+{
+    "name": "allSIGE",
+    "description": "allSIGE default packages",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "mvc",
+        "zf",
+        "zendframework"
+    ],
+    "homepage": "http://allsige.com",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "zendframework/zendframework": "^3.0",
+        "doctrine/orm": "*"
+    },
+    "require-dev": {
+        "zendframework/skeleton-application": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "StartUpWeb\\": "src/Presentation/web/module/StartUpWeb/src",
+            "StartUpSys\\": "src/Presentation/sys/module/StartUpSys/src",
+            "StartUpTemplate\\": "src/Presentation/template/module/StartUpTemplate/src",
+			"App\\Infrastructure\\": "src/Infrastructure",
+			"App\\Domain\\": "src/Domain"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ApplicationTest\\": "module/Application/test/"
+        }
+    },
+    "extra": [],
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "development-disable": "zf-development-mode disable",
+        "development-enable": "zf-development-mode enable",
+        "development-status": "zf-development-mode status",
+        "post-create-project-cmd": [
+            "@development-enable"
+        ],
+        "serve": "php -S 0.0.0.0:8080 -t public/ public/index.php",
+        "test": "phpunit"
+    }
+}
